@@ -1,0 +1,242 @@
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: url('Immagini/Immagine-sfondo.webp') no-repeat center center fixed;
+    background-size: cover;
+    color: white;
+}
+
+header {
+    background-color: rgba(0, 0, 0, 0.9); 
+    color: white;
+    padding: 10px 0;
+    text-align: center;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+h1, h2{
+    color: #1e90ff;
+}
+.container {
+    width: fit-content;
+    margin: 0 auto;
+}
+
+.logo {
+    font-size: 42px;
+    padding-bottom: 5px;
+    font-weight: bold;
+    color: #053e77;
+}
+
+nav {
+    text-align: center;
+    margin-top: 10px;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: inline-block;
+}
+
+nav ul li {
+    display: inline;
+    margin-left: 20px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+    text-decoration: underline;
+    color: #1e90ff;
+}
+
+.hero-text {
+    position: relative; 
+    margin-top: 100px; 
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 20px;
+    border-radius: 10px;
+    width: 80%; 
+    max-width: 900px; 
+    margin: 100px auto;
+    display: flex; 
+    justify-content: space-between;
+    align-items: center; 
+}
+
+.hero-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.hero-text-content {
+    flex: 1;
+    padding-right: 20px; 
+}
+
+.hero-text h1 {
+    font-size: 36px;
+}
+
+.hero-text p {
+    font-size: 20px;
+}
+
+.hero-text h1, .hero-text p {
+    margin: 10px 0;
+}
+
+.hero-image img {
+    width: 100%;
+    max-width: 250px; 
+    border-radius: 10px; 
+}
+
+
+
+.progetti-sezione {
+    display: block; 
+    margin: 50px 0;
+}
+
+.box-progetti {
+    background-color: rgba(0, 0, 0, 0.7);
+    padding: 20px;
+    border-radius: 10px;
+    width: 80%; 
+    margin: 0px auto; 
+    text-align: center;
+    color: white;
+}
+
+.box-progetti img {
+    width: 100%;
+    max-width: 600px;
+    margin-top: 20px;
+    border-radius: 10px; 
+}
+
+span {
+    font-weight: 600;
+}
+
+.hero-text > div > h1 {
+    font-size: 45px;
+}
+
+.box-progetti > p > a{
+    color: white;
+}
+
+
+
+.contatti-sezione {
+    background-color: rgba(0, 0, 0, 0.7);
+    padding: 40px 20px;
+    margin-top: 50px;
+    text-align: center;
+    color: white;
+}
+
+.contatti-sezione h2 {
+    font-size: 32px;
+    margin-bottom: 20px;
+}
+
+.contatti-sezione ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.contatti-sezione ul li {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.contatti-sezione a {
+    color: #008CBA;
+    text-decoration: none;
+}
+
+.contatti-sezione a:hover {
+    text-decoration: underline;
+}
+
+footer {
+    background-color: rgba(0, 0, 0, 0.9);
+    color: white;
+    padding: 10px 0;
+    text-align: center;
+    margin-top: 50px;
+}
+
+footer a {
+    color: #008CBA;
+    text-decoration: none;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
+.parallax {
+    background-image: url("Immagini/Immagine-parallax.webp");
+  
+    min-height: 200px;
+  
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+#Instagram{
+    width: 70px; 
+}
+#GitHub{
+    width: 30px;
+    border-radius: 5px;
+}
+
+#TornaSu {
+    display: none;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 99;
+    border: none;
+    background-color: #09232c;
+    color: white;
+    padding: 15px;
+    cursor: pointer;
+    border-radius: 50%;
+}
+
+@media (max-width: 768px) {
+    .hero-text {
+        flex-direction: column; 
+        text-align: center;
+    }
+    
+    .hero-text-content {
+        padding-right: 0;
+        margin-bottom: 20px;
+    }
+    
+    .hero-image img {
+        max-width: 150px; 
+    }
+}
